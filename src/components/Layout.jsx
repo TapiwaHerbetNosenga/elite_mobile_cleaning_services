@@ -2,6 +2,7 @@ import React from "react";
 import NavBar from "./Navbar";
 import Footer from "./Footer";
 
+
 const Layout = ({ children }) => {
   return (
     <div id="site-wrapper">
@@ -9,7 +10,7 @@ const Layout = ({ children }) => {
       <NavBar />
 
       {/* Main Content */}
-      <main id="pageMain" className="w-max">{children}</main>
+      <main id="pageMain" className="">{children}</main>
 
       {/* Page Footer */}
       <Footer />

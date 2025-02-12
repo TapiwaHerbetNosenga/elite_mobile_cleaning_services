@@ -9,15 +9,15 @@
 }
 
 #site-wrapper {
-  min-height: 100vh;
+   min-height: 100vh; 
   display:grid;
   grid-template-areas: 
   "nav"
   "main"
   "footer";
-grid-template-rows: 60px 1fr 40px;
+grid-template-rows: 10vw 1fr 4vw;
 grid-template-columns: 1fr;
-height: 100vh;
+
 width:100vw;
 margin: 0;
 }
@@ -32,6 +32,7 @@ margin: 0;
   
   #pageMain{
   grid-area:main;
+
   }
   
   #pageFooter{

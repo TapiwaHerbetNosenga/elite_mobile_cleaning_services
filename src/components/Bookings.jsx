@@ -1,28 +1,32 @@
-import React from 'react';
-import { useState } from 'react';
-import WhatsappModal from './WhatsappModal';
-
+import React from "react";
+import { useState } from "react";
+import Modal from "./Modal";
+import car from "/carwash.jpg"
+import WhatsappBooking from "./WhatsappBooking";
+import EmailBooking from "./EmailModal";
 
 const Bookings = () => {
 
-    // const function handleWhatsappClick() {
-    //     const phoneNumber = "919999999999"; // Replace with the actual phone number
-    //     const message = "Hello, I'm interested in booking a service.";
-    //     const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
-    //     window.open(whatsappURL, "_blank");
-    //   }
-
-   const [isVisible, setIsVisible] = useState(false);
-
-    function handleClick(){
-   setIsVisible(!isVisible);
-    // return alert(`${visible}`);
-    }
+  const [isModalOpen, setModalOpen] = useState(false);
+  const [isEmailOpen, setEmailOpen] = useState(false);
 
   return (
-    <div><WhatsappModal visible={isVisible} /><button onClick={()=>{handleClick()}}>Whatsapp</button></div>
-  )
-}
+    <div className="grid grid-cols-4">
+      <div className="flex flex-col col-span-2"> <button onClick={() => setModalOpen(true)}>Book Via Whatsap</button>
+      <Modal isOpen={isModalOpen} onClose={() => setModalOpen(false)}>
+        <WhatsappBooking />
+      </Modal>
+      <button onClick={() => setEmailOpen(true)}>Book Via Email</button>
+      <Modal isOpen={isEmailOpen} onClose={() => setEmailOpen(false)}>
+        <EmailBooking />
+        </Modal></div>
+      <div className="bg-blue-500 w-full col-span-2">
+      <img src={car} alt="car" className="w-full h-80 object-cover" />
+      </div>
+      
 
+    </div>
+  );
+};
 
 export default Bookings;

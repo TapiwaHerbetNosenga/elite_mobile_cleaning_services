@@ -1,8 +1,8 @@
 import React from 'react';
 import ServiceCard from './ServiceCard';
-import sedan from '/public/sedan.svg';
-import suv from '/public/suv.svg';
-import truck from '/public/truck.svg';
+import sedan from '/public/sedan.png';
+import suv from '/public/suv.png';
+import truck from '/public/truck.png';
 
 const OurServices = () => {
     return (

@@ -1,4 +1,6 @@
-import React from 'react'
+import React from 'react';
+import bef1 from "/b1.jpg";
+import aft1 from "/a1.jpg";
 
 import { useState } from "react";
 
@@ -51,9 +53,8 @@ import "swiper/css/pagination";
 
 const Carousel = () => {
   const images = [
-    "https://via.placeholder.com/800x400/FF5733/ffffff?text=Slide+1",
-    "https://via.placeholder.com/800x400/33FF57/ffffff?text=Slide+2",
-    "https://via.placeholder.com/800x400/3357FF/ffffff?text=Slide+3",
+    bef1,
+    aft1 ,
   ];
 
   return (

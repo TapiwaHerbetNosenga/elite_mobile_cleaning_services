@@ -9,10 +9,10 @@ const Bookings = () => {
   const [isEmailOpen, setEmailOpen] = useState(false);
 
   return (
-    <div className="flex flex-col justify-center items-center mb-8 ">
-    <div className="grid grid-cols-1 lg:grid-cols-2 gap-8  px-6 py-8  bg-blue-400  w-9/10">
+    <div className="flex flex-col justify-center items-center mb-8 "  id="book-now" >
+    <div className="grid grid-cols-1 lg:grid-cols-2 gap-8  px-6 py-8  bg-blue-400  w-9/10" >
       {/* Booking Options */}
-      <div className="flex flex-col justify-center items-center space-y-6">
+      <div className="flex flex-col justify-center items-center space-y-6" >
         <h2 className="text-3xl font-bold text-gray-800 text-center">Book Your Car Wash</h2>
         <button
           onClick={() => setModalOpen(true)}

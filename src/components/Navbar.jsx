@@ -17,7 +17,7 @@ const NavBar = () => {
   return (
     <div
       id="pageNav"
-      className={`w-full grid grid-cols-6 h-fit py-2 text-white text-2xl transition-all duration-300 ${
+      className={`w-full grid grid-cols-6 h-fit py-2 bg-white text-2xl transition-all duration-300 ${
         isSticky ? "fixed top-0 bg-black shadow-md z-50" : "relative"
       }`}
     >
@@ -27,18 +27,21 @@ const NavBar = () => {
           <img src={Logo} alt="logo" width={80} height={80} className="rounded-full" />
         </div>
         <div className="flex flex-row justify-evenly w-1/2">
-          <p className="underline">Services</p>
+        <a href="#services" className="underline hover:text-sky-400 text-gray-600">Services</a>
+          <a href="#book-now" className="underline hover:text-sky-400 text-gray-600">Book Now</a>
+          <a href="#contact" className="underline hover:text-sky-400 text-gray-600 ">Contact Us</a>
+          {/* <p className="underline">Services</p>
           <p className="underline">Book Now</p>
-          <p className="underline">Contact Us</p>
+          <p className="underline">Contact Us</p> */}
         </div>
       </div>
 
       {/* Right Side - Contact Info */}
       <div className="flex flex-col justify-center items-end col-span-2">
         <div className="flex flex-col justify-center items-center">
-          <div className="text-xl">071 927 0935</div>
+          <div className="text-xl text-gray-600">071 927 0935</div>
           <hr className="w-full" />
-          <div className="text-xl">sales@mobilecleaningct.com</div>
+          <div className="text-xl text-gray-600">sales@mobilecleaningct.com</div>
         </div>
       </div>
     </div>

@@ -5,8 +5,9 @@ import truck from "/public/truck.svg";
 
 const OurServices = () => {
   return (
-    <div className="w-full grid grid-cols-1 sm:grid-cols-3 gap-6 px-4 py-8 bg-gray-100" id="services">
-      
+    <div  id="services" className="flex flex-col mt-5">
+     <div className="text-gray-600 text-5xl">Our Services</div>
+      <div className="w-full grid grid-cols-1 sm:grid-cols-3 gap-6 px-4 py-8 bg-gray-100">
       {/* Sedan Card */}
       <div className="w-full flex justify-center">
         <div className="flex flex-col justify-center items-center border-2 border-black bg-white p-6 shadow-lg w-6/10">
@@ -32,6 +33,7 @@ const OurServices = () => {
           <p className="text-center font-semibold text-2xl">Bucci/Large Car</p>
           <p className="text-center text-gray-600 font-bold text-xl">R300</p>
         </div>
+      </div>
       </div>
 
     </div>

@@ -1,5 +1,5 @@
 import React from "react";
-import NavBar from "./Navbar";
+import {NavBar, MobileMenu} from "./Navbar";
 import Footer from "./Footer";
 
 
@@ -8,6 +8,7 @@ const Layout = ({ children }) => {
     <div id="site-wrapper">
       {/* Navigation Bar */}
       <NavBar />
+      <MobileMenu />
 
       {/* Main Content */}
       <main id="pageMain" className="">{children}</main>

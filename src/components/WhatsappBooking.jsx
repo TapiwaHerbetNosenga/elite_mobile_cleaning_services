@@ -62,7 +62,7 @@ const WhatsappBooking = () => {
 
       <div className="mb-4"> {/* Button group styling */}
         <label className="block text-gray-700 font-medium mb-2">Service Type:</label> {/* Label for buttons */}
-        <div className="flex space-x-2"> {/* Button spacing */}
+        <div className="flex flex-col space-y-2 md:flex-row md:space-y-0 md:space-x-2"> {/* Button spacing */}
           <button
             className={`px-4 py-2 rounded ${selected === "small" ? 'bg-blue-500 text-white' : 'bg-gray-200 text-gray-700'} hover:bg-blue-700 hover:text-white focus:outline-none`}  
             type="button"
@@ -89,7 +89,7 @@ const WhatsappBooking = () => {
 
       <div className="mb-4"> {/* Date selection styling */}
         <label className="block text-gray-700 font-medium mb-2">Select Date:</label>
-        <div className="flex space-x-2"> {/* Date button spacing */}
+        <div className="flex flex-col space-y-2 md:flex-row md:space-y-0 md:space-x-2"> {/* Date button spacing */}
           <button
             className={`px-4 py-2 rounded ${formData.date === "Saturday" ? 'bg-blue-500 text-white' : 'bg-gray-200 text-gray-700'} hover:bg-blue-700 hover:text-white focus:outline-none`}
             type="button"

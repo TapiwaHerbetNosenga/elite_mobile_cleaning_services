@@ -88,7 +88,8 @@ const EmailBooking = () => {
 
       <div className="mb-4">
         <label className="block text-gray-700 font-medium mb-2">Service Type:</label>
-        <div className="flex space-x-2">
+        <div className="flex flex-col space-y-2 md:flex-row md:space-y-0 md:space-x-2">
+          {/* Changed to flex-col for vertical stacking on small screens */}
           <button
             className={`px-4 py-2 rounded ${selected === "small" ? 'bg-blue-500 text-white' : 'bg-gray-200 text-gray-700'} hover:bg-blue-700 hover:text-white focus:outline-none`}
             type="button"
@@ -115,7 +116,8 @@ const EmailBooking = () => {
 
       <div className="mb-4">
         <label className="block text-gray-700 font-medium mb-2">Select Date:</label>
-        <div className="flex space-x-2">
+        <div className="flex flex-col space-y-2 md:flex-row md:space-y-0 md:space-x-2">
+          {/* Changed to flex-col for vertical stacking on small screens */}
           <button
             className={`px-4 py-2 rounded ${formData.date === "Saturday" ? 'bg-blue-500 text-white' : 'bg-gray-200 text-gray-700'} hover:bg-blue-700 hover:text-white focus:outline-none`}
             type="button"

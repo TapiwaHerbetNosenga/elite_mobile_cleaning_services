@@ -37,19 +37,19 @@ const NavBar = () => {
           {/* Added space-x-2 for smaller screens and space-x-4 for medium and larger screens */}
           <a
             href="#services"
-            className="underline hover:text-sky-400 text-gray-600"
+            className=" hover:text-sky-400 text-gray-600"
           >
             Services
           </a>
           <a
             href="#book-now"
-            className="underline hover:text-sky-400 text-gray-600"
+            className=" hover:text-sky-400 text-gray-600"
           >
             Book Now
           </a>
           <a
             href="#contact"
-            className="underline hover:text-sky-400 text-gray-600"
+            className=" hover:text-sky-400 text-gray-600"
           >
             Contact Us
           </a>

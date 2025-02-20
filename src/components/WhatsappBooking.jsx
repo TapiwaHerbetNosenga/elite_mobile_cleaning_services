@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 const WhatsappBooking = () => {
   const handleWhatsappClick = () => {
     const phoneNumber = "27719270935";
-    const message = `Hi, my name is ${formData.name} and I would like to book a ${formData.type} service on ${formData.date}.`;
+    const message = `Hi, my name is ${formData.name} and I would like to book a ${formData.type} sized car wash on ${formData.date}.`;
     const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
     window.open(whatsappURL, "_blank");
   };
@@ -13,7 +13,7 @@ const WhatsappBooking = () => {
   const [formData, setFormData] = useState({
     name: '',
     type: '',
-    date: ''
+    date: 'Saturday'
   });
 
   const handleInputChange = (e) => {
